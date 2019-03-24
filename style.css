@@ -42,7 +42,7 @@ input {
 	text-align: center;
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.75);
 	transition: all 0.3s ease-in-out;
-	font-size: 2vw;
+	font-size: 5vw;
 }
 
 input:hover, input:focus {
@@ -79,6 +79,7 @@ input[type=number]::placeholder, input[type=number]::-webkit-placeholder {
 
 	input {
 		height: 100%;
+		font-size: 2vw;
 	}
 
 	.header span {

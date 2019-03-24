@@ -78,7 +78,7 @@ function initBody(elem) {
 					input.classList.add('dead');
 					input.placeholder = 'Dead';
 				}
-				input.addEventListener('focus', compute);
+				input.addEventListener('click', function(){alert("Test");});
 				cell.appendChild(input);
 			}
 		}

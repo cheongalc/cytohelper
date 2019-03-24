@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CytoHelper</title>
+	<style type="text/css">
+
+		body {
+			display: block;
+			margin: 0px;
+			padding: 0px;
+			background-color: #008eff;
+		}
+
+		.flex-container {
+			display: flex;
+			display: -webkit-box;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+			height: 100vh;
+			justify-content: center;
+			background-color: #008eff;
+		}
+
+		.flex-container > table {
+			background-color: #fff;
+			width: 33%;
+			margin: 4vw;
+			text-align: center;
+			font-size: 30px; 
+		}
+
+		.cell {
+			width: 100px;
+			height: 100px;
+			background-color: #eee;
+		}
+	</style>
+</head>
+<body onload="init()">
+	<div id='master' class='flex-container'>
+	</div>
+	<script>
+		function init () {
+			let master = document.getElementById('master');
+			let replicateNum = 3;
+			for (i = 0; i < replicateNum; i++) {
+				let table = document.createElement('table');
+				table.id = `t${i}`;
+				master.appendChild(table);
+				for (r = 0; r < 2; r++) {
+					let row = table.insertRow(-1);
+					for (c = 0; c < 2; c++) {
+						let cell = row.insertCell();
+						cell.id = `t${i}r${r}c${c}`;
+						cell.classList.add('cell');
+						cell.contentEditable = 'true';
+					}
+				}
+			}
+		}
+	</script>
+</body>
+</html>

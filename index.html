@@ -7,49 +7,7 @@
 	<link rel='stylesheet' type='text/css' href='style.css'>
 	<script src='main.js'></script>
 </head>
-<body onload='init()'>
-	<div class='master flex-container'>
-		<div class="header flex-container"><span>cyto-helper</span></div>
-		<div class="table flex-container">
-			<table>
-				<tr>
-					<td><input type="number"></td>
-					<td><input type="number"></td>
-				</tr>
-				<tr>
-					<td><input type="number"></td>
-					<td><input type="number"></td>
-				</tr>
-			</table>
-		</div>
-		<div class="table flex-container">
-			<table>
-				<tr>
-					<td><input type="number"></td>
-					<td><input type="number"></td>
-				</tr>
-				<tr>
-					<td><input type="number"></td>
-					<td><input type="number"></td>
-				</tr>
-			</table>
-		</div>
-		<div class="table flex-container">
-			<table>
-				<tr>
-					<td><input type="number"></td>
-					<td><input type="number"></td>
-				</tr>
-				<tr>
-					<td><input type="number"></td>
-					<td><input type="number"></td>
-				</tr>
-			</table>
-		</div>
-		<div class="result flex-container">
-			<div>Average viable cell density:<br><span>NIL</span></div>
-			<div>Average % viable cells:<br><span>NIL</span></div>
-		</div>
-	</div>
+<body onload='init()' onkeydown="detectKeyDown(event)">
+	<div id='master' class='master flex-container'></div>
 </body>
 </html>

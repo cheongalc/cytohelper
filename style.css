@@ -16,7 +16,7 @@ body {
 	justify-content: center;
 }
 
-.master  div {
+.master div {
 	text-align: center;
 	padding: 10px 10px 0 10px;
 	flex: 1 100%;
@@ -29,8 +29,6 @@ body {
 	font-size: 5vw;
 }
 
-.table {
-}
 
 .table table {
 	width: 100%;
@@ -48,7 +46,7 @@ input {
 }
 
 input:hover, input:focus {
-	background-color: #e2f2ff;
+	background-color: #fff;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -57,15 +55,23 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
+input[type=number]::placeholder, input[type=number]::-webkit-placeholder {
+	font-size: 4vw;
+}
+
+.live {background-color: #defabb;}
+
+.dead {background-color: #f5b6da;}
+
 .result div {
 	color: white;
 	font-weight: bold;
 	text-shadow: 0px 2px 5px rgba(0,0,0,1);
-	font-size: 2.5vw;
+	font-size: 4vw;
 }
 
 .result span {
-	font-size: 4vw;
+	font-size: 5vw;
 }
 
 @media all and (min-width: 600px) {
@@ -86,5 +92,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 	.table table {
 		border-spacing: 10px;
+	}
+
+	.result div {font-size: 2.5vw;}
+	.result span {font-size: 4vw;}
+
+	input[type=number]::placeholder, input[type=number]::-webkit-placeholder {
+		font-size: 2.5vw;
 	}
 }
